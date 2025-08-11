@@ -1,6 +1,9 @@
-#pragma pack(push, 1)
+#ifndef ITCH_PARSER_H
+#define ITCH_PARSER_H
 
-#include <stdint.h>
+#include <cstdint>
+
+#pragma pack(push, 1)
 
 struct ITCHMessageHeader {
   char messageType;
@@ -24,3 +27,5 @@ struct AddOrderMessage {
 };
 
 #pragma pack(pop)
+
+#endif
